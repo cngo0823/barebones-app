@@ -10,11 +10,10 @@ barebones-app/
 │   ├── main.py           # FastAPI application
 │   └── requirements.txt  # Python dependencies
 ├── frontend/
-│   ├── public/
-│   │   └── index.html    # HTML template
 │   ├── src/
 │   │   ├── App.jsx       # Main React component
 │   │   └── main.jsx      # React entry point
+|   ├── index.html        # HTML template
 │   ├── package.json      # Node.js dependencies
 │   └── vite.config.js    # Vite configuration
 └── README.md            # This file
