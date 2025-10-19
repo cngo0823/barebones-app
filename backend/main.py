@@ -23,13 +23,11 @@ async def health_check():
 
 @app.get("/api/data")
 async def get_data():
-    return {
-        "items": [
+    return [
             {"id": 1, "name": "Item 1", "description": "First item"},
             {"id": 2, "name": "Item 2", "description": "Second item"},
             {"id": 3, "name": "Item 3", "description": "Third item"}
         ]
-    }
 
 if __name__ == "__main__":
     uvicorn.run("main:app", host="0.0.0.0", port=8000, reload=True)

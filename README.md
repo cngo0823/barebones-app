@@ -1,6 +1,6 @@
 # 🚀 Barebones App
 
-A minimal full-stack application built with React (frontend) and FastAPI (backend).
+A minimal full-stack application built with Vue.js + TypeScript (frontend) and FastAPI (backend).
 
 ## 📁 Project Structure
 
@@ -11,11 +11,14 @@ barebones-app/
 │   └── requirements.txt  # Python dependencies
 ├── frontend/
 │   ├── src/
-│   │   ├── App.jsx       # Main React component
-│   │   └── main.jsx      # React entry point
+│   │   ├── App.vue       # Main Vue component
+│   │   ├── main.ts       # Vue entry point
+│   │   └── vite-env.d.ts # TypeScript declarations
 |   ├── index.html        # HTML template
 │   ├── package.json      # Node.js dependencies
-│   └── vite.config.js    # Vite configuration
+│   ├── vite.config.js    # Vite configuration
+│   ├── tsconfig.json     # TypeScript configuration
+│   └── tsconfig.node.json # TypeScript Node configuration
 └── README.md            # This file
 ```
 
@@ -27,7 +30,9 @@ barebones-app/
 - **Python 3.8+** - Programming language
 
 ### Frontend
-- **React 18** - JavaScript library for building user interfaces
+- **Vue.js 3** - Progressive JavaScript framework for building user interfaces
+- **TypeScript** - Typed superset of JavaScript
+- **AG Grid Community** - Professional data grid for Vue.js
 - **Vite** - Build tool and development server
 - **Axios** - HTTP client for API requests
 
@@ -98,7 +103,8 @@ The frontend will be available at `http://localhost:5173`
 
 ## 🎯 Features
 
-- ✅ Modern React frontend with functional components and hooks
+- ✅ Modern Vue.js 3 frontend with Composition API and TypeScript
+- ✅ Professional data grid with AG Grid Community (sorting, filtering, pagination)
 - ✅ FastAPI backend with automatic API documentation
 - ✅ CORS configuration for local development
 - ✅ Health check endpoint
@@ -115,6 +121,7 @@ The frontend will be available at `http://localhost:5173`
 
 ### Frontend
 - The frontend supports hot module replacement (HMR)
+- TypeScript provides type safety and better developer experience
 - ESLint is configured for code quality
 
 ## 🚀 Production Build
