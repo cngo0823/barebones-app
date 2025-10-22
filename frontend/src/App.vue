@@ -22,27 +22,18 @@ const apiStatus = ref<string>('checking...')
 // AG Grid column definitions
 const columnDefs = ref<ColDef[]>([
   { 
-    field: 'id', 
+    field: 'olympus_id', 
     headerName: 'ID',
     width: 100,
     sortable: true,
     filter: true
   },
   { 
-    field: 'name', 
-    headerName: 'Name',
+    field: 'cusip', 
+    headerName: 'CUSIP',
     flex: 1,
     sortable: true,
     filter: true
-  },
-  { 
-    field: 'description', 
-    headerName: 'Description',
-    flex: 2,
-    sortable: true,
-    filter: true,
-    wrapText: true,
-    autoHeight: true
   }
 ])
 

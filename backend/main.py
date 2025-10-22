@@ -1,3 +1,4 @@
+from typing import Any
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 import uvicorn
@@ -22,11 +23,10 @@ async def health_check():
     return {"status": "healthy", "service": "barebones-api"}
 
 @app.get("/api/data")
-async def get_data():
+async def get_data() -> list[dict[str, Any]]:
     return [
-            {"id": 1, "name": "Item 1", "description": "First item"},
-            {"id": 2, "name": "Item 2", "description": "Second item"},
-            {"id": 3, "name": "Item 3", "description": "Third item"}
+            {"olympus_id": 45815, "cusip": "CND10004KM54"},
+            {"olympus_id": 68312, "cusip": "69369EAD1"},
         ]
 
 if __name__ == "__main__":
